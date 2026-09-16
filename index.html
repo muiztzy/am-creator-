@@ -3,180 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#087cf0">
-<title>AM CREATOR</title>
-
+<title>Alight Motion Premium - Pro Motion Editor</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <style>
-*{
-    box-sizing:border-box;
-}
-
-body{
-    margin:0;
-    background:#050914;
-    color:white;
-    font-family:Arial,sans-serif;
-}
-
-header{
-    padding:18px;
-    background:#08111f;
-    border-bottom:1px solid #12345c;
-    text-align:center;
-}
-
-.logo{
-    color:#35a7ff;
-    font-size:23px;
-    font-weight:bold;
-}
-
-.container{
-    max-width:650px;
-    margin:auto;
-    padding:18px;
-}
-
-.card{
-    margin-top:18px;
-    padding:22px;
-    background:#09111e;
-    border:1px solid #087cf0;
-    border-radius:18px;
-}
-
-h1{
-    color:#35a7ff;
-    text-align:center;
-}
-
-h2{
-    color:#8dcfff;
-}
-
-p{
-    color:#b9dfff;
-    line-height:1.5;
-}
-
-input,select{
-    width:100%;
-    padding:14px;
-    margin:8px 0 15px;
-    border-radius:10px;
-    border:1px solid #23669d;
-    background:#050914;
-    color:white;
-}
-
-button{
-    width:100%;
-    padding:14px;
-    border:0;
-    border-radius:12px;
-    background:#087cf0;
-    color:white;
-    font-weight:bold;
-    font-size:15px;
-}
-
-.notice{
-    margin-top:15px;
-    padding:12px;
-    border-radius:10px;
-    background:#092440;
-    color:#bfe3ff;
-    font-size:13px;
-}
-
-footer{
-    text-align:center;
-    padding:25px;
-    color:#66809b;
-    font-size:12px;
-}
+  *{font-family:'Plus Jakarta Sans',sans-serif}
+  body{background:#0A0A0B; color:white; overflow-x:hidden}
+ .glass{background: rgba(255,255,255,0.06); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.08)}
+ .gradient-text{background: linear-gradient(90deg,#8B5CF6,#EC4899,#F59E0B); -webkit-background-clip:text; -webkit-text-fill-color:transparent}
+ .gradient-btn{background: linear-gradient(95deg,#8B5CF6 0%,#EC4899 100%); box-shadow: 0 0 30px rgba(139,92,246,0.4)}
+ .grid-bg{background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 24px 24px;}
 </style>
 </head>
-
-<body>
-
-<header>
-    <div class="logo">⚡ AM CREATOR</div>
-</header>
-
-<div class="container">
-
-    <div class="card">
-        <h1>⚡ AM CREATOR</h1>
-
-        <p style="text-align:center;">
-            Selamat datang di AM CREATOR
-        </p>
+<body class="grid-bg">
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 glass">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl gradient-btn flex items-center justify-center font-extrabold">A</div>
+      <span class="font-bold text-[18px] tracking-tight">ALIGHT<span class="font-light opacity-60">MOTION</span> <span class="text-[10px] ml-2 px-2 py-1 rounded-full bg-white/10 border-white/10">PREMIUM</span></span>
     </div>
+    <div class="hidden md:flex gap-8 text-sm opacity-70">
+      <a href="#features" class="hover:opacity-100">Fitur</a>
+      <a href="#compare" class="hover:opacity-100">Perbandingan</a>
+      <a href="#pricing" class="hover:opacity-100">Harga</a>
+    </div>
+    <a href="#pricing" class="gradient-btn px-5 py-2.5 rounded-full text-sm font-bold">Download Pro</a>
+  </div>
+</nav>
 
-    <div class="card">
+<!-- HERO -->
+<section class="pt-36 pb-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <div class="inline-flex items-center gap-2 glass px-3 py-1.5 rounded-full text-xs mb-6">
+      <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span> V5.0.270 Update Terbaru Tersedia
+    </div>
+    <h1 class="text-[48px] md:text-[72px] font-extrabold leading-[0.9] tracking-tighter">
+      EDIT VIDEO<br><span class="gradient-text">LEVEL DEWA</span><br>TANPA LIMIT.
+    </h1>
+    <p class="mt-6 text-white/60 text-[16px] leading-relaxed max-w-md">
+      Buka semua fitur premium Alight Motion. No watermark, 3000+ font, efek XML, export 4K 60fps. Untuk editor yang serius.
+    </p>
+    <div class="mt-8 flex gap-4">
+      <a href="#" class="gradient-btn px-8 py-4 rounded-full font-bold flex items-center gap-2">Dapatkan Premium <span>→</span></a>
+      <div class="flex -space-x-2 items-center">
+        <img src="https://i.pravatar.cc/40?img=1" class="w-9 h-9 rounded-full border-2 border-black">
+        <img src="https://i.pravatar.cc/40?img=2" class="w-9 h-9 rounded-full border-2 border-black">
+        <img src="https://i.pravatar.cc/40?img=3" class="w-9 h-9 rounded-full border-2 border-black">
+        <div class="ml-4 text-xs"><b class="text-white">12.5K+</b><br><span class="opacity-50">Editor Aktif</span></div>
+      </div>
+    </div>
+  </div>
 
-        <h2>ALIGHT MOTION PREMIUM</h2>
-
-        <label>Email</label>
-
-        <input
-            id="email"
-            type="email"
-            placeholder="Masukkan email kamu"
-        >
-
-        <label>Pilih Paket</label>
-
-        <select id="paket">
-            <option>Premium — 1 Bulan</option>
-            <option>Premium — 1 Tahun</option>
-        </select>
-
-        <button onclick="kirim()">
-            LANJUTKAN
-        </button>
-
-        <div class="notice">
-            <b>Informasi:</b><br>
-            Form ini hanya mencatat permintaan layanan.
-            Premium Alight Motion harus diperoleh melalui cara resmi.
+  <!-- Phone Mockup -->
+  <div class="relative mx-auto">
+    <div class="absolute -inset-20 bg-gradient-to-tr from-violet-600/30 via-fuchsia-600/20 to-amber-500/20 blur-[80px] rounded-full"></div>
+    <div class="relative w-[320px] h-[640px] glass rounded-[48px] p-3 shadow-2xl">
+      <div class="w-full h-full rounded-[36px] overflow-hidden bg-black relative">
+        <div class="absolute top-0 w-full h-full bg-gradient-to-b from-violet-600 to-black p-6 flex flex-col">
+          <div class="flex justify-between text-[10px] opacity-60"><span>9:41</span><span>●●●</span></div>
+          <div class="mt-20">
+            <div class="h-2 w-full bg-white/20 rounded-full"><div class="h-2 w-[85%] bg-white rounded-full"></div></div>
+            <div class="mt-8 grid grid-cols-3 gap-3">
+              <div class="h-20 glass rounded-2xl"></div><div class="h-20 glass rounded-2xl"></div><div class="h-20 glass rounded-2xl"></div>
+            </div>
+            <div class="mt-6 glass rounded-2xl p-4"><div class="text-xs font-bold">Export 4K 60FPS ✓</div><div class="text-[10px] opacity-60">No Watermark • All Effects Unlocked</div></div>
+          </div>
         </div>
-
+      </div>
     </div>
+  </div>
+</section>
 
-</div>
+<!-- FEATURES -->
+<section id="features" class="max-w-7xl mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="glass rounded-[24px] p-7">
+      <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center mb-4">✦</div>
+      <h3 class="font-bold">Tanpa Watermark</h3><p class="text-sm opacity-60 mt-2">Export bersih, profesional untuk client & portfolio.</p>
+    </div>
+    <div class="glass rounded-[24px] p-7 border-violet-500/30">
+      <div class="w-10 h-10 rounded-xl gradient-btn flex items-center justify-center mb-4">◍</div>
+      <h3 class="font-bold">3000+ Font & Efek XML</h3><p class="text-sm opacity-60 mt-2">Import preset jedag-jedug viral langsung jadi.</p>
+    </div>
+    <div class="glass rounded-[24px] p-7">
+      <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center mb-4">◎</div>
+      <h3 class="font-bold">Export 4K 60fps</h3><p class="text-sm opacity-60 mt-2">Kualitas maksimal tanpa kompresi hancur.</p>
+    </div>
+  </div>
+</section>
 
-<footer>
-    AM CREATOR © 2026
-</footer>
+<!-- PRICING -->
+<section id="pricing" class="max-w-7xl mx-auto px-6 pb-24">
+  <h2 class="text-center text-4xl font-extrabold tracking-tight">Pilih Paket <span class="gradient-text">Premium-mu</span></h2>
+  <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-12">
+    <div class="glass rounded-[32px] p-8">
+      <h4 class="font-bold opacity-60">GRATIS</h4><div class="text-4xl font-extrabold mt-2">Rp0</div>
+      <ul class="mt-6 space-y-3 text-sm opacity-70">
+        <li>✓ Watermark</li><li>✓ Export 720p</li><li>✓ Iklan</li>
+      </ul>
+      <button class="w-full mt-8 py-3 rounded-full bg-white/10 font-bold">Pakai Gratis</button>
+    </div>
+    <div class="rounded-[32px] p-[1px] bg-gradient-to-b from-violet-500 to-fuchsia-500">
+      <div class="bg-[#151516] rounded-[31px] p-8 h-full">
+        <div class="flex justify-between"><h4 class="font-bold gradient-text">PREMIUM PRO</h4><span class="text-xs px-3 py-1 rounded-full gradient-btn">PALING LAKU</span></div>
+        <div class="text-4xl font-extrabold mt-2">Rp49K <span class="text-sm font-normal opacity-50">/ selamanya</span></div>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li>✓ No Watermark</li><li>✓ Export 4K 60fps</li><li>✓ Semua Efek & Font Terbuka</li><li>✓ Support Preset XML / Alight Link</li>
+        </ul>
+        <a href="#" class="block text-center w-full mt-8 py-4 rounded-full gradient-btn font-bold">Download Sekarang</a>
+        <p class="text-[11px] text-center opacity-40 mt-3">Aman & update otomatis via Telegram Channel</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<script>
-function kirim(){
-
-    const email =
-        document.getElementById("email").value.trim();
-
-    const paket =
-        document.getElementById("paket").value;
-
-    if(email === ""){
-        alert("Masukkan email terlebih dahulu!");
-        return;
-    }
-
-    if(!email.includes("@")){
-        alert("Email tidak valid!");
-        return;
-    }
-
-    alert(
-        "Permintaan berhasil dibuat!\n\n" +
-        "Paket: " + paket + "\n" +
-        "Email: " + email
-    );
-}
-</script>
-
+<footer class="border-t border-white/10 py-10 text-center text-xs opacity-30">© 2026 Alight Motion Premium • Not affiliated with Alight Creative, Inc.</footer>
 </body>
 </html>
