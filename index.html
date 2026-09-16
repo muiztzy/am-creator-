@@ -9,11 +9,10 @@
 <style>
 *{
     box-sizing:border-box;
-    margin:0;
-    padding:0;
 }
 
 body{
+    margin:0;
     background:#050914;
     color:white;
     font-family:Arial,sans-serif;
@@ -28,35 +27,46 @@ header{
 
 .logo{
     color:#35a7ff;
-    font-size:22px;
+    font-size:23px;
     font-weight:bold;
 }
 
 .container{
-    max-width:700px;
+    max-width:650px;
     margin:auto;
     padding:18px;
 }
 
-.box{
-    margin:20px 0;
-    padding:25px 20px;
-    border:2px solid #087cf0;
-    border-radius:20px;
+.card{
+    margin-top:18px;
+    padding:22px;
     background:#09111e;
-    text-align:center;
-    box-shadow:0 0 25px #087cf033;
+    border:1px solid #087cf0;
+    border-radius:18px;
 }
 
 h1{
     color:#35a7ff;
-    margin-bottom:10px;
+    text-align:center;
+}
+
+h2{
+    color:#8dcfff;
 }
 
 p{
     color:#b9dfff;
     line-height:1.5;
-    margin-bottom:20px;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    margin:8px 0 15px;
+    border-radius:10px;
+    border:1px solid #23669d;
+    background:#050914;
+    color:white;
 }
 
 button{
@@ -67,82 +77,16 @@ button{
     background:#087cf0;
     color:white;
     font-weight:bold;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1590ff;
-}
-
-nav{
-    display:flex;
-    gap:8px;
-    margin-bottom:15px;
-}
-
-nav button{
-    background:#0b1727;
-    border:1px solid #1d466b;
-}
-
-nav button.active{
-    background:#087cf0;
-}
-
-section{
-    display:none;
-}
-
-section.active{
-    display:block;
-}
-
-.card{
-    padding:20px;
-    background:#09111e;
-    border:1px solid #173452;
-    border-radius:15px;
-    margin-bottom:15px;
-}
-
-.title{
-    font-size:23px;
-    font-weight:bold;
-    margin-bottom:15px;
-    color:#8dcfff;
-}
-
-.form{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-}
-
-input,select{
-    width:100%;
-    padding:14px;
-    border-radius:10px;
-    border:1px solid #23669d;
-    background:#091522;
-    color:white;
+    font-size:15px;
 }
 
 .notice{
     margin-top:15px;
     padding:12px;
-    background:#092440;
     border-radius:10px;
+    background:#092440;
     color:#bfe3ff;
     font-size:13px;
-    line-height:1.5;
-}
-
-.item{
-    padding:14px;
-    margin-bottom:10px;
-    border-radius:12px;
-    border:1px solid #173452;
-    background:#09111e;
 }
 
 footer{
@@ -162,239 +106,76 @@ footer{
 
 <div class="container">
 
-<nav>
-    <button class="active"
-        onclick="showPage('home',this)">
-        Home
-    </button>
+    <div class="card">
+        <h1>⚡ AM CREATOR</h1>
 
-    <button onclick="showPage('create',this)">
-        Create
-    </button>
+        <p style="text-align:center;">
+            Selamat datang di AM CREATOR
+        </p>
+    </div>
 
-    <button onclick="showPage('history',this)">
-        Riwayat
-    </button>
-</nav>
+    <div class="card">
 
-<!-- HOME -->
-<section id="home" class="active">
+        <h2>ALIGHT MOTION PREMIUM</h2>
 
-<div class="box">
+        <label>Email</label>
 
-    <h1>⚡ AM CREATOR</h1>
+        <input
+            id="email"
+            type="email"
+            placeholder="Masukkan email kamu"
+        >
 
-    <p>
-        Website berhasil dijalankan!
-        <br>
-        Selamat datang di AM CREATOR.
-    </p>
+        <label>Pilih Paket</label>
 
-    <button onclick="showPage('create',document.querySelectorAll('nav button')[1])">
-        MULAI
-    </button>
+        <select id="paket">
+            <option>Premium — 1 Bulan</option>
+            <option>Premium — 1 Tahun</option>
+        </select>
 
-</div>
+        <button onclick="kirim()">
+            LANJUTKAN
+        </button>
 
-<div class="card">
-    <h3>🟢 Server Status</h3>
-    <br>
-    <b>ONLINE</b>
-</div>
+        <div class="notice">
+            <b>Informasi:</b><br>
+            Form ini hanya mencatat permintaan layanan.
+            Premium Alight Motion harus diperoleh melalui cara resmi.
+        </div>
 
-</section>
-
-
-<!-- CREATE -->
-<section id="create">
-
-<div class="title">
-    ALIGHT MOTION PREMIUM
-</div>
-
-<div class="card">
-
-<div class="form">
-
-<label>Email</label>
-
-<input
-    id="email"
-    type="email"
-    placeholder="Masukkan email kamu"
->
-
-<label>Pilih Paket</label>
-
-<select id="plan">
-
-<option>
-Premium — 1 Bulan
-</option>
-
-<option>
-Premium — 1 Tahun
-</option>
-
-</select>
-
-<button onclick="submitRequest()">
-    LANJUTKAN
-</button>
-
-</div>
-
-<div class="notice">
-<b>Informasi:</b><br>
-Form ini hanya mencatat permintaan layanan.
-Premium Alight Motion harus diperoleh melalui cara resmi.
-</div>
-
-</div>
-
-</section>
-
-
-<!-- HISTORY -->
-<section id="history">
-
-<div class="title">
-    RIWAYAT
-</div>
-
-<div id="historyList"></div>
-
-</section>
+    </div>
 
 </div>
 
 <footer>
-AM CREATOR © 2026
+    AM CREATOR © 2026
 </footer>
 
-
 <script>
+function kirim(){
 
-function showPage(page,btn){
+    const email =
+        document.getElementById("email").value.trim();
 
-    document.querySelectorAll("section")
-    .forEach(function(section){
-        section.classList.remove("active");
-    });
+    const paket =
+        document.getElementById("paket").value;
 
-    document.getElementById(page)
-    .classList.add("active");
-
-    document.querySelectorAll("nav button")
-    .forEach(function(button){
-        button.classList.remove("active");
-    });
-
-    if(btn){
-        btn.classList.add("active");
-    }
-
-    if(page === "history"){
-        loadHistory();
-    }
-
-    window.scrollTo(0,0);
-}
-
-
-function submitRequest(){
-
-    let email =
-        document.getElementById("email")
-        .value.trim();
-
-    let plan =
-        document.getElementById("plan")
-        .value;
-
-    if(!email || !email.includes("@")){
-
-        alert("Masukkan email yang valid!");
-
+    if(email === ""){
+        alert("Masukkan email terlebih dahulu!");
         return;
     }
 
-    let data =
-        JSON.parse(
-            localStorage.getItem("am_history") || "[]"
-        );
+    if(!email.includes("@")){
+        alert("Email tidak valid!");
+        return;
+    }
 
-    data.unshift({
-
-        email:email,
-
-        plan:plan,
-
-        status:"Menunggu pembayaran",
-
-        date:new Date()
-        .toLocaleString("id-ID")
-
-    });
-
-    localStorage.setItem(
-        "am_history",
-        JSON.stringify(data)
+    alert(
+        "Permintaan berhasil dibuat!\n\n" +
+        "Paket: " + paket + "\n" +
+        "Email: " + email
     );
-
-    alert("Permintaan berhasil dibuat!");
-
-    document.getElementById("email")
-    .value="";
-
-    loadHistory();
 }
-
-
-function loadHistory(){
-
-    let list =
-        document.getElementById("historyList");
-
-    let data =
-        JSON.parse(
-            localStorage.getItem("am_history") || "[]"
-        );
-
-    if(data.length === 0){
-
-        list.innerHTML =
-        '<div class="card">Belum ada riwayat.</div>';
-
-        return;
-    }
-
-    list.innerHTML =
-        data.map(function(x){
-
-            return `
-            <div class="item">
-                <b>${escapeHtml(x.plan)}</b><br>
-                Email: ${escapeHtml(x.email)}<br>
-                Status: ${escapeHtml(x.status)}<br>
-                <small>${escapeHtml(x.date)}</small>
-            </div>
-            `;
-
-        }).join("");
-}
-
-
-function escapeHtml(text){
-
-    return String(text)
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
-}
-
 </script>
 
 </body>
