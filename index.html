@@ -3,92 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muiztzy Store - Top Up All Game Murah & Cepat</title>
+<title>Muiztzy Store - Top Up E-Wallet & Game</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
-  body{font-family:'Inter',sans-serif;background:#07080D;color:white}
-  h1,h2,h3{font-family:'Space Grotesk',sans-serif}
-.glass{background:rgba(255,255,255,0.04);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.08)}
-.card:hover{transform:translateY(-4px);border-color:#8B5CF6}
+ body{font-family:'Plus Jakarta Sans',sans-serif;background:#0A0C14;color:white}
+.dana-card{background:linear-gradient(135deg,#118EEA 0%,#0A5AA8 100%)}
+.gopay-card{background:linear-gradient(135deg,#00AED6 0%,#0081A0 100%)}
+.glass-dark{background:#151821;border:1px solid rgba(255,255,255,0.07)}
 </style>
 </head>
-<body class="min-h-screen">
-<header class="sticky top-0 z-50 glass border-b">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-    <div class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 to-cyan-400 flex items-center justify-center font-bold">M</div>
-      <span class="font-bold">MUIZTZY <span class="text-cyan-400">STORE</span></span>
-    </div>
-    <div class="flex items-center gap-2">
-      <div class="hidden md:flex items-center gap-2 bg-black border border-white/10 rounded-full px-4 py-2">
-        <span>🔍</span><input placeholder="Cari game..." class="bg-transparent text-sm outline-none w-32">
-      </div>
-      <div class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">🛒</div>
-    </div>
+<body class="max-w-[430px] mx-auto min-h-screen bg-[#0A0C14] relative overflow-hidden">
+<!-- TOP BAR -->
+<div class="px-5 pt-6 pb-4 flex justify-between items-center">
+  <div class="flex items-center gap-3">
+    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black font-black">M</div>
+    <div><div class="font-extrabold leading-none">Muiztzy Store</div><div class="text-[10px] opacity-50">ID: 889201 • Premium</div></div>
   </div>
-</header>
+  <div class="w-10 h-10 rounded-full glass-dark flex items-center justify-center">🔔</div>
+</div>
 
-<main class="max-w-6xl mx-auto px-4 py-6">
-  <div class="rounded-[24px] bg-gradient-to-r from-violet-600 via-fuchsia-500 to-cyan-400 p-[1px]">
-    <div class="rounded-[23px] bg-[#101119] p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-4">
-      <div>
-        <div class="inline-flex text-[10px] px-2 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">● PROMO HARI INI</div>
-        <h1 class="text-2xl md:text-3xl font-bold mt-3">Top Up All Game<br>Termurah & Tercepat</h1>
-        <p class="text-sm opacity-60 mt-2">Proses < 30 detik • Bayar QRIS, E-Wallet, Bank</p>
-      </div>
-      <button class="px-6 py-3 rounded-full bg-white text-black font-bold text-sm">Lihat Promo →</button>
-    </div>
+<!-- BALANCE CARDS ala DANA GOPAY -->
+<div class="px-5 flex gap-3">
+  <div class="flex-1 dana-card rounded-[20px] p-4 relative overflow-hidden">
+    <img src="https://i.ibb.co/3Yq9j6F/dana-illust.png" onerror="this.style.display='none'" class="absolute -right-2 -bottom-2 w-20 opacity-80">
+    <div class="text-[10px] tracking-widest opacity-80">DANA</div>
+    <div class="mt-2 text-xs opacity-80">Saldo</div>
+    <div class="font-extrabold text-lg">Rp 2.450.000</div>
+    <div class="mt-3 flex gap-2"><span class="text-[9px] px-2 py-1 bg-white/20 rounded-full">Top Up</span><span class="text-[9px] px-2 py-1 bg-white/20 rounded-full">Transfer</span></div>
+    <div class="absolute right-3 top-3 text-2xl">💳</div>
   </div>
-
-  <div class="flex gap-2 mt-6 overflow-x-auto pb-2">
-    <button class="px-4 py-2 rounded-full bg-white text-black text-xs font-bold">Semua</button>
-    <button class="px-4 py-2 rounded-full glass text-xs">Mobile Legends</button>
-    <button class="px-4 py-2 rounded-full glass text-xs">Free Fire</button>
-    <button class="px-4 py-2 rounded-full glass text-xs">Valorant</button>
-    <button class="px-4 py-2 rounded-full glass text-xs">Genshin</button>
-    <button class="px-4 py-2 rounded-full glass text-xs">Roblox</button>
+  <div class="flex-1 gopay-card rounded-[20px] p-4 relative overflow-hidden">
+    <div class="text-[10px] tracking-widest opacity-80">GOPAY</div>
+    <div class="mt-2 text-xs opacity-80">Saldo</div>
+    <div class="font-extrabold text-lg">Rp 1.890.500</div>
+    <div class="mt-3 flex gap-2"><span class="text-[9px] px-2 py-1 bg-white/20 rounded-full">Bayar</span><span class="text-[9px] px-2 py-1 bg-white/20 rounded-full">Isi</span></div>
+    <div class="absolute right-3 top-3 text-2xl">📱</div>
   </div>
+</div>
 
-  <h2 class="font-bold mt-8 mb-4">🔥 Populer di Muiztzy Store</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/1000x1000/MLBB_Tile_2024.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">Mobile Legends</div><div class="text-[11px] opacity-50">Moonton</div></div></div>
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Free-Fire/FreeFire_Tile_2023.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">Free Fire</div><div class="text-[11px] opacity-50">Garena</div></div></div>
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Valorant/Valorant_Tile_2022.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">Valorant</div><div class="text-[11px] opacity-50">Riot</div></div></div>
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Genshin-Impact/GenshinImpact_Tile.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">Genshin Impact</div><div class="text-[11px] opacity-50">HoYoverse</div></div></div>
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Roblox/Roblox_Tile_2022.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">Roblox</div><div class="text-[11px] opacity-50">Roblox</div></div></div>
-    <div class="card glass rounded-2xl p-3 cursor-pointer"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/PUBG-MOBILE/PUBG_Mobile_Tile.png" class="w-full rounded-xl aspect-square object-cover"><div class="mt-3"><div class="text-sm font-bold">PUBG Mobile</div><div class="text-[11px] opacity-50">Tencent</div></div></div>
+<!-- MENU ICONS -->
+<div class="px-5 mt-6 grid grid-cols-4 gap-4">
+  <div class="text-center"><div class="w-14 h-14 mx-auto glass-dark rounded-2xl flex items-center justify-center text-xl">🎮</div><div class="text-[10px] mt-2 font-semibold">All Game</div></div>
+  <div class="text-center"><div class="w-14 h-14 mx-auto glass-dark rounded-2xl flex items-center justify-center text-xl">💎</div><div class="text-[10px] mt-2 font-semibold">Diamond</div></div>
+  <div class="text-center"><div class="w-14 h-14 mx-auto glass-dark rounded-2xl flex items-center justify-center text-xl">📲</div><div class="text-[10px] mt-2 font-semibold">E-Wallet</div></div>
+  <div class="text-center"><div class="w-14 h-14 mx-auto glass-dark rounded-2xl flex items-center justify-center text-xl">🎬</div><div class="text-[10px] mt-2 font-semibold">Premium App</div></div>
+</div>
+
+<!-- TOP UP FORM -->
+<div class="mx-5 mt-6 glass-dark rounded-[24px] p-5">
+  <div class="flex justify-between items-center">
+    <h3 class="font-bold text-sm">Top Up Gopay & Dana</h3>
+    <span class="text-[10px] px-2 py-1 rounded-full bg-green-500/20 text-green-400">● Instant</span>
   </div>
 
-  <div class="grid lg:grid-cols-3 gap-6 mt-10">
-    <div class="lg:col-span-2">
-      <h2 class="font-bold mb-4">🎮 Semua Game</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <div class="glass rounded-2xl p-4 flex items-center gap-3"><div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">⚔️</div><div class="flex-1"><div class="text-sm font-bold">Honkai Star Rail</div><div class="text-[11px] opacity-50">Mulai Rp 15.000</div></div><button class="px-3 py-1 rounded-full bg-white/10 text-xs">Top Up</button></div>
-        <div class="glass rounded-2xl p-4 flex items-center gap-3"><div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">🏆</div><div class="flex-1"><div class="text-sm font-bold">Clash of Clans</div><div class="text-[11px] opacity-50">Mulai Rp 12.000</div></div><button class="px-3 py-1 rounded-full bg-white/10 text-xs">Top Up</button></div>
-      </div>
-    </div>
-    <div class="glass rounded-[24px] p-5 h-fit">
-      <h3 class="font-bold">🛒 Form Top Up</h3>
-      <div class="mt-4 space-y-3">
-        <div><label class="text-[11px] opacity-60">ID Player</label><input placeholder="Masukkan ID" class="w-full mt-1 bg-black border border-white/10 rounded-xl px-4 py-3 text-sm outline-none focus:border-violet-500"></div>
-        <div><label class="text-[11px] opacity-60">Pilih Nominal</label>
-          <div class="grid grid-cols-2 gap-2 mt-2">
-            <button class="py-2.5 rounded-xl bg-white text-black font-bold text-xs">86 Diamonds</button>
-            <button class="py-2.5 rounded-xl bg-white/5 border border-white/10 text-xs">172 Diamonds</button>
-          </div>
-        </div>
-        <div><label class="text-[11px] opacity-60">Metode Bayar</label>
-          <select class="w-full mt-1 bg-black border border-white/10 rounded-xl px-4 py-3 text-sm outline-none">
-            <option>QRIS</option><option>DANA</option><option>OVO</option><option>Gopay</option>
-          </select>
-        </div>
-        <button class="w-full mt-3 py-3.5 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-400 font-bold text-sm">Bayar Sekarang</button>
-        <p class="text-[10px] opacity-40 text-center">© 2026 Muiztzy Store By oas Project</p>
-      </div>
+  <div class="mt-4">
+    <label class="text-[11px] opacity-60">Nomor HP / ID</label>
+    <div class="mt-2 flex items-center gap-3 bg-[#0E101B] border border-white/10 rounded-2xl px-4 py-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968841.png" class="w-7 h-7 rounded-full">
+      <input placeholder="08xx xxxx xxxx" class="bg-transparent w-full text-sm outline-none">
+      <span class="text-xs opacity-40">📇</span>
     </div>
   </div>
-</main>
-<footer class="mt-10 py-6 border-t border-white/5 text-center text-[11px] opacity-40">Muiztzy Store • Top Up All Game • Proses Kilat</footer>
+
+  <div class="mt-4">
+    <label class="text-[11px] opacity-60">Pilih Nominal</label>
+    <div class="grid grid-cols-3 gap-2 mt-2">
+      <button class="py-3 rounded-2xl bg-white text-black font-bold text-xs">10K</button>
+      <button class="py-3 rounded-2xl glass-dark text-xs">20K</button>
+      <button class="py-3 rounded-2xl glass-dark text-xs">50K</button>
+      <button class="py-3 rounded-2xl glass-dark text-xs">100K</button>
+      <button class="py-3 rounded-2xl glass-dark text-xs">200K</button>
+      <button class="py-3 rounded-2xl glass-dark text-xs">500K</button>
+    </div>
+  </div>
+
+  <div class="mt-4 p-3 rounded-2xl bg-[#0E101B] border border-white/5 flex gap-3 items-center">
+    <img src="https://i.ibb.co/0jQ0X0L/qris.png" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/a/a2/QRIS_logo.svg'" class="w-10">
+    <div class="flex-1"><div class="text-xs font-bold">QRIS - All Payment</div><div class="text-[10px] opacity-50">Dana, Gopay, OVO, ShopeePay</div></div>
+    <div class="text-green-400 text-xs">✓</div>
+  </div>
+
+  <button class="w-full mt-4 py-4 rounded-2xl bg-white text-black font-extrabold text-sm">Bayar Sekarang - Muiztzy Store</button>
+  <div class="mt-3 flex justify-center gap-4 opacity-40">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" class="h-4"><img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg" class="h-4">
+  </div>
+</div>
+
+<!-- GAME LIST -->
+<div class="px-5 mt-6 pb-10">
+  <h3 class="font-bold text-sm mb-3">Top Up Game Populer</h3>
+  <div class="grid grid-cols-4 gap-3">
+    <div class="glass-dark rounded-2xl p-2 text-center"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/MLBB/1000x1000/MLBB_Tile_2024.png" class="rounded-xl"><div class="text-[10px] mt-1 font-bold">MLBB</div></div>
+    <div class="glass-dark rounded-2xl p-2 text-center"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Free-Fire/FreeFire_Tile_2023.png" class="rounded-xl"><div class="text-[10px] mt-1 font-bold">Free Fire</div></div>
+    <div class="glass-dark rounded-2xl p-2 text-center"><img src="https://cdn1.codashop.com/S/content/common/images/denom-image/Valorant/Valorant_Tile_2022.png" class="rounded-xl"><div class="text-[10px] mt-1 font-bold">Valorant</div></div>
+    <div class="glass-dark rounded-2xl p-2 text-center"><div class="w-full aspect-square rounded-xl bg-gradient-to-br from-violet-600 to-cyan-400 flex items-center justify-center">🎮</div><div class="text-[10px] mt-1 font-bold">Lainnya</div></div>
+  </div>
+  <p class="text-[10px] text-center opacity-30 mt-6">© 2026 Muiztzy Store By oas Project • Desain ala DANA & GoPay Dark</p>
+</div>
+
 </body>
 </html>
